@@ -1,0 +1,98 @@
+1*ngIf="tooltipVisible; else noEllipsisTem" -> /libs/shared-ui/src/lib/text-ellipsis/text-ellipsis.component.html:2:2
+2*ngIf="queAnswer?.values.length > 0; else emptyTpl" -> /libs/shared-ui/src/lib/quote-que-preview/quote-que-preview.component.html:1:14
+3*ngIf="queAnswer.queId !== emptyId && (queAnswer.values?.length > 0 || queShowType === 'hide') ; else emptyTpl" -> /libs/shared-ui/src/lib/que-preview/que-preview.component.html:2:2
+4*ngIf="parsedFormula" -> /libs/shared-ui/src/lib/follow-flow/components/filter-cond-info/filter-cond-info.component.html:49:5
+5*ngIf="fileUrl" -> /libs/shared-ui/src/lib/download-file/download-file.component.html:2:2
+6*ngIf="loading" -> /libs/shared-ui/src/lib/dashboard-item/pc-ui/pc-favorite/favorite-item-add/favorite-item-add.component.html:9:5
+7*ngIf="!errorCode" -> /libs/shared-ui/src/lib/dashboard-item/pc-ui/pc-expand-bi-chart/pc-expand-bi-chart.component.html:41:5
+8*ngIf="!beingUsing" -> /libs/shared-ui/src/lib/dashboard-item/pc-ui/pc-carousel/pc-carousel.component.html:46:2
+9*ngIf="!pageLoading" -> /libs/shared-ui/src/lib/chart-display/chart-mobile/mobile-data-table/mobile-data-table.component.html:7:14
+10*ngIf="isEmpty; else emptyTpl" -> /libs/shared-ui/src/lib/chart-display/chart-mobile/mobile-data-table/que-preview/que-preview.component.html:1:14
+11*ngIf="param.tooltipTitle" -> /libs/pc-ui/src/lib/data-table-cell/td-content/td-content-data-relation/td-content-data-relation.component.html:2:2
+12*ngIf="!param.tooltipTitle" -> /libs/pc-ui/src/lib/data-table-cell/td-content/td-content-data-relation/td-content-data-relation.component.html:8:2
+13*ngIf="isEmpty; else emptyTpl" -> /libs/mobile-ui/src/lib/mobile-table/que-preview/que-preview.component.html:1:14
+14*ngIf="settings.language" -> /apps/pc/src/app/shared/components/global/highlight/highlight.component.html:2:2
+15*ngIf="!loading && configPositive" -> /apps/pc/src/app/qflow-style/flow-design/components/qsource-positive-polling-settings/qsource-positive-polling-settings.component.html:8:5
+16*ngIf="!loading && configPassive" -> /apps/pc/src/app/qflow-style/flow-design/components/advanced-setting/qsource-passive-polling-settings/qsource-passive-polling.component.html:8:5
+17*ngIf="!loading && dbConfig" -> /apps/pc/src/app/qflow-style/flow-design/components/advanced-setting/database-polling-settings/database-polling-settings.component.html:8:5
+18*ngIf="barType === 'check'" -> /apps/pc/src/app/pages/print-tpl/tool-bar/bar-item/bar-item.component.html:30:14
+19*ngIf="oldVersionList.length === 0 && versions.length === 0; else versionsTpl" -> /apps/pc/src/app/pages/open-center-be/open-connector-wrapper/open-connector-setting/connector-version-overall/connector-version/connector-version.component.html:2:2
+20*ngIf="openCenterBeSrv?.events?.length === 0; else eventListTpl" -> /apps/pc/src/app/pages/open-center-be/open-connector-wrapper/open-connector-setting/connector-event-overall/connector-event/connector-event.component.html:2:2
+21*qfModalReminder="" -> /apps/pc/src/app/pages/manage/components/transfer-super-admin/transfer-super-admin.component.html:1:5
+22*ngIf="!beingNavigationAvailable" -> /apps/pc/src/app/pages/manage/components/navigation-menu/navigation-menu.component.html:1:5
+23*ngIf="inviteInfo" -> /apps/pc/src/app/pages/invite-to-workspace/invite-to-workspace.component.html:1:5
+24*ngIf="dealSuccessVisible" -> /apps/pc/src/app/pages/email-deal/email-deal.component.html:7:5
+25*ngIf="!dashboardEditService.isShowSub; else subGridTpl" -> /apps/pc/src/app/pages/dashboard-edit/dashboard-edit-area/grid/dashboard-edit-grid-widget.component.html:12:14
+26*ngIf="loading" -> /apps/pc/src/app/pages/dashboard-edit/dashboard-edit-area/grid/grid-item-add/grid-item-add.component.html:1:5
+27*qfShowIf="'pc'" -> /apps/pc/src/app/pages/college/college.component.html:2:14
+28*qfShowIf="'phone'" -> /apps/pc/src/app/pages/college/college.component.html:112:14
+29*ngIf="showPayGuide" -> /apps/pc/src/app/pages/app-item/app-setting/sms/sms.component.html:1:5
+30*ngIf="!isPrivateCloud(environment.version)" -> /apps/pc/src/app/pages/app-item/app-setting/remind/remind.component.html:52:2
+31*ngIf="showPayGuide && !loading" -> /apps/pc/src/app/pages/app-item/app-setting/print/print.component.html:1:5
+32*ngIf="showPayGuide && loading" -> /apps/pc/src/app/pages/app-item/app-setting/print/print.component.html:9:2
+33*ngIf="showPayGuide && !initLoading" -> /apps/pc/src/app/pages/app-item/app-setting/custom-btn/custom-btn.component.html:1:5
+34*ngIf="showPayGuide && initLoading" -> /apps/pc/src/app/pages/app-item/app-setting/custom-btn/custom-btn.component.html:8:5
+35*ngIf="!chartLoading && relatedChartList?.length === 0" -> /apps/pc/src/app/pages/app-item/app-setting/chart-relation/chart-relation.component.html:2:2
+36*ngIf="levelExpired" -> /apps/pc/src/app/pages/app-item/app-setting/app-setting-qrobot/app-setting-qrobot.component.html:1:5
+37*ngIf="onLoading; else loadFinishedTpl" -> /apps/pc/src/app/pages/app-content/app-statistics/app-statistic.component.html:1:5
+38*ngIf="
+    authInfo.auth === AuthType.SPECIFIED_MEMBER ||
+    authInfo.auth === VisualAuthEnum.ASSIGN_MEMBER
+  " -> /apps/pc/src/app/modules/visible-range/visible-range.component.html:40:2
+39*ngFor="let settingTpl of dataShowSettigs" -> /apps/pc/src/app/modules/view-template/view-config/view-data-show/view-data-show.component.html:1:14
+40*ngIf="viewConfig" -> /apps/pc/src/app/modules/view-template/table-view/table-view.component.html:1:5
+41*ngIf="showChartNote" -> /apps/pc/src/app/modules/report-charts/chart-note/chart-note.component.html:1:14
+42*ngIf="rolesEmpty" -> /apps/pc/src/app/modules/qf-ws-contact/components/contact-detail/contact-detail.component.html:843:5
+43*ngIf="!initFinished" -> /apps/pc/src/app/modules/qf-initiate-apply/qf-initiate-apply.component.html:13:5
+44*ngIf="customizeLinkUrl; else cardTpl" -> /apps/pc/src/app/modules/qf-add-member/qf-add-member.component.html:1:14
+45*ngIf="isEmptyAccount" -> /apps/pc/src/app/modules/plugin-center/setting-components/jianguoyun-set.component.html:55:5
+46*ngIf="!ocrCustomTemplates.length" -> /apps/pc/src/app/modules/plugin-center/setting-components/ocr-set.component.html:1:14
+47*ngIf="ocrCustomTemplates.length > 0" -> /apps/pc/src/app/modules/plugin-center/setting-components/ocr-set.component.html:19:14
+48*ngIf="parsedFormula" -> /apps/pc/src/app/modules/filter-cond/filter-cond-info.component.html:49:5
+49*ngIf="modeType === 'simple'" -> /apps/pc/src/app/modules/filter-cond/filter-cond.component.html:22:14
+50*ngIf="modeType === 'advanced'" -> /apps/pc/src/app/modules/filter-cond/filter-cond.component.html:26:14
+51*ngIf="
+    ![
+      QueType.DESCRIPTION,
+      QueType.MEMBER,
+      QueType.UPLOAD,
+      QueType.IMAGE_PICKER,
+      QueType.RICHTEXT,
+      QueType.TABLE,
+      QueType.RADIO,
+      QueType.SELECT,
+      QueType.CHECKBOX,
+      QueType.DEPARTMENT
+    ].includes(queType)
+  " -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:3:2
+52*ngIf="[QueType.RADIO, QueType.SELECT, QueType.CHECKBOX].includes(queType)" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:23:2
+53*ngIf="queType === QueType.MEMBER" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:29:14
+54*ngIf="queType === QueType.DEPARTMENT" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:38:14
+55*ngIf="queType === QueType.UPLOAD" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:47:14
+56*ngIf="queType === QueType.IMAGE_PICKER" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:59:14
+57*ngIf="queType === QueType.DESCRIPTION || queType === QueType.RICHTEXT" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:71:2
+58*ngIf="queType === QueType.TABLE" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/modify-record-value.component.html:83:14
+59*ngIf="beforeAnswer" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/special-components/simple-table-value/simple-table-value.component.html:2:14
+60*ngIf="afterAnswer" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/special-components/simple-table-value/simple-table-value.component.html:33:14
+61*ngIf="queRecord" -> /apps/pc/src/app/modules/data-detail/pc/modify-record-value/special-components/simple-table-value/simple-table-value.component.html:64:14
+62*ngIf="nodes.length; else emptyTpl" -> /apps/pc/src/app/modules/contacts-frame/depart/depart-tab.component.html:1:14
+63*ngIf="token" -> /apps/passport/src/app/routes/oidc-authorize/oidc-authorize.component.html:1:5
+64*ngIf="
+    [8, 2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 18, 21, 5, 19, 17].includes(
+      queType
+    )
+  " -> /apps/mobile/src/app/shared/components/result-filter/result-filter.component.html:3:2
+65*ngIf="queType === 8" -> /apps/mobile/src/app/shared/components/result-filter/result-filter.component.html:20:14
+66*ngIf="queType === 12 && queId === 4" -> /apps/mobile/src/app/shared/components/result-filter/result-filter.component.html:47:14
+67*ngIf="
+    [
+      8, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 21, 18, 5, 19, 17
+    ].includes(queType) && queId !== 4
+  " -> /apps/mobile/src/app/shared/components/result-filter/result-filter.component.html:104:2
+68*ngIf="npsShow" -> /apps/mobile/src/app/routes/init/nps/nps.component.html:2:2
+69*ngIf="dealSuccessVisible" -> /apps/mobile/src/app/routes/email-deal/email-deal.component.html:1:14
+70*ngIf="applyCallback === 0" -> /apps/mobile/src/app/routes/apply/apply-succeed/apply-succeed.component.html:1:14
+71*ngIf="showStatus !== 'init'; else initTpl" -> /apps/bi/src/app/routers/list/report/report.component.html:1:5
+72*ngIf="authConfig.authType === 'assign'" -> /apps/bi/src/app/modules/bussiness/select-contact/select-contact.component.html:31:5
+73*ngIf="!hideFooter" -> /apps/bi/src/app/modules/bussiness/select-contact/contacts-frame/member/member-tab.component.html:118:5
+74*ngIf="nodes.length; else emptyTpl" -> /apps/bi/src/app/modules/bussiness/select-contact/contacts-frame/depart/depart-tab.component.html:1:14

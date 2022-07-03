@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/compiler": "^12.2.16",
+    "walk": "^2.3.15"
+  }
+}
