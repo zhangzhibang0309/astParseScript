@@ -1,6 +1,7 @@
-# 分析ast抽象语法树在一个庞大项目中找到自己需要优化的地方
-。
+# 通过分析ast抽象语法树在一个庞大项目中找到自己需要优化的地方
+
 先描述一下我这个优化具体要做什么。
+
 ```html
 <ng-container *ngIf="expression">
   <p>我出现了</p>
@@ -66,11 +67,12 @@ function walkProject(projectRoot, pred, cb) {
 ## 如何得到html的ast以及通过解析ast找到自己的target
 我们要在调用walkProject的时候传过来一个回调函数，在这个函数里面解析ast并筛选出我们的目标。
 先来理清一下思路，在上面walkProject中执行cb也就是刚才所说的核心回调，这时候我们有的只是一个fileInfo，这里面存储着每个html文件的路径，然后就要通过这个路径，先去拿到html模版，然后将这一整页的html解析成ast抽象语法树。
+
 就单单看这一部分，其实难度就很高的，比较纯粹的做法是自己手撕一个html转ast，不过这种轮子是很常见的，特别是在各个前端框架的compiler模块中（这个脚本的架子是我从公司架构师那里拿的，所以很多地方都写好了），这里用的是@angular/complier中的HtmlParser，用法很简单，可以将传入的html模版字符串直接解析成ast。后面的处理其实就简单多了。
 
 但是稍微仔细想一下，我们拿到的ast是一整个文件的，也就是只有顶层元素，这时候必然要去不断的递归遍历Element和Element的children，我们应该对每一个元素判断是否是我们想要的。
 
-所以还用到了@angular/complier中的visitAll方法，这个方法可以自动化递归ast树，然后根据传入的visitor对象中的visitElement方法不断的对Element进行筛选。
+所以还用到了@angular/complier中的visitAll方法，这个方法可以自动化递归ast树，然后根据传入的visitor对象中的visitElement方法不断的对Element进行筛选。找到满足条件的element，将其加入到visitor的results数组中输出，就能拿到我们想要的。
 ```js
 const fs = require("fs");
 const {
@@ -164,3 +166,7 @@ class Visitor extends RecursiveVisitor {
 }
 
 ```
+
+上面针对于我需要的element元素的筛选就不赘述了，此处可以根据自己需要更改。
+
+下期预告，手撕htmlAstParser。
